@@ -1,1 +1,21 @@
-
+.body {
+  background-image: url(images/istockphoto-952039286-170667a.jpg);
+  background-size: contain;
+}
+.iletişim_konular {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.Gönder_button {
+  padding-left: 10px;
+}
+.iletişim_link {
+  text-decoration: none;
+  font-size: 30px;
+}
+.Anasayfa_button {
+  text-decoration: none;
+  font-size: 30;
+  color: white;
+}
