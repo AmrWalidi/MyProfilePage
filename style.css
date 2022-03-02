@@ -1,5 +1,5 @@
 .body {
-  background-image: url(images/uwp951531.jpeg);
+  background-image: url(images/fxgpJq.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -7,20 +7,30 @@
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .Gönder_button {
   padding-left: 10px;
 }
-.Anasayfa_button {
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-}
 .HaftalıkDreslerTablosu {
   font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+  border-color: transparent;
 }
 .Face {
   stroke: black;
   fill: yellow;
+}
+.İNÜ_tanıtımı {
+  text-align: justify;
+  font-size: 22px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 20px;
+}
+.link {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
