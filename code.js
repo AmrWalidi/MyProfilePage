@@ -39,21 +39,21 @@ function add() {
   console.log(Öğrenci);
 
 function big1(){
-  document.getElementById("link1").style="font-size: 35px;position: fixed; left: 60px"
+  document.getElementById("link1").style="font-size: 35px;position: absolute; left: 60px"
 }
 function big2(){
-  document.getElementById("link2").style="font-size: 35px;position: fixed; right: 680px"
+  document.getElementById("link2").style="font-size: 35px;position: absolute; right: 680px"
 }
 function big3(){
-  document.getElementById("link3").style="font-size: 35px; position: fixed; right: 20px"
+  document.getElementById("link3").style="font-size: 35px; position: absolute; right: 20px"
 }
 
 function normal1(){
-  document.getElementById("link1").style="font-size: 25px;position: fixed; left: 60px"
+  document.getElementById("link1").style="font-size: 25px;position: absolute; left: 60px"
 }
 function normal2(){
-  document.getElementById("link2").style="font-size: 25px;position: fixed; right: 680px"
+  document.getElementById("link2").style="font-size: 25px;position: absolute; right: 680px"
 }
 function normal3(){
-  document.getElementById("link3").style="font-size: 25px; position: fixed; right: 20px"
+  document.getElementById("link3").style="font-size: 25px; position: absolute; right: 20px"
 }
