@@ -2,6 +2,7 @@
   <head>
     <title>İnönü Üniversite Tanıtım</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="code.js"></script>
   </head>
   <body class="body">
     <iframe
@@ -11,11 +12,32 @@
       frameborder="0"
     ></iframe>
     <div>
-      <a class="link" style="padding-left: 50px" href="index.html">Anasayfa</a>
-      <a class="link" style="padding-left: 500px" href="iletişim.html"
+      <a
+        class="link"
+        id="link1"
+        onmouseover="big1()"
+        onmouseleave="normal1()"
+        style="position: fixed; left: 60px"
+        href="index.html"
+        >Anasayfa</a
+      >
+      <a
+        class="link"
+        id="link2"
+        onmouseover="big2()"
+        onmouseleave="normal2()"
+        style="position: fixed; right: 680px"
+        href="iletişim.html"
         >iletişim</a
       >
-      <a class="link" style="padding-left: 338px" href="HaftalikDersler.html"
+      <a
+        class="link"
+        id="link3"
+        onmouseover="big3()"
+        onmouseleave="normal3()"
+        style="position: fixed; right: 20px"
+        style="padding-left: 338px"
+        href="HaftalikDersler.html"
         >Haftalık Dersler</a
       >
     </div>
@@ -25,7 +47,7 @@
         height: 360px;
         float: left;
         padding: left;
-        padding-top: 30px;
+        padding-top: 40px;
       "
       src="images/Inönü_üniversitesi_logo.gif"
     />

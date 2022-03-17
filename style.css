@@ -29,6 +29,7 @@
   padding-top: 50px;
 }
 .link {
+  font-weight: bolder;
   text-decoration: none;
   font-size: 25px;
   color: white;
