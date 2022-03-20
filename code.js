@@ -28,9 +28,11 @@ function add() {
     var x = y % z;
     document.getElementById("sonuc").value= x;
   }
-  function renkDeğiştirme() {
-    document.getElementById("metin").style = "color: red; font-size: 30px";
-  }
+  
+  function renkDeğiştirme(){
+      document.getElementById("metin").style="color: red; font-size: 30px"; 
+    }
+  
   const Öğrenci = {
     adı: "Amr",
     No: 2210224064,

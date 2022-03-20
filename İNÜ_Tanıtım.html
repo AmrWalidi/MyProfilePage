@@ -71,12 +71,26 @@
       dünyada 340'ıncı, Türkiye'de ise 18'inci sırada yer almıştır.
     </p>
     <video
-      style="padding-top: 30px"
+      class="video"
+      width="50%"
       controls
+      muted
+      style="padding-top: 30px"
       src="videos/İnönü Üniversitesi Tanıtım Filmi _ Neden İnönü Üniversitesi_.mp4"
     ></video>
+    <script>
+      const clip = document.querySelectorAll(".video");
+      for (let i = 0; i < clip.length; i++) {
+        clip[i].addEventListener("mouseenter", function (e) {
+          clip[i].play();
+        });
+        clip[i].addEventListener("mouseout", function (e) {
+          clip[i].pause();
+        });
+      }
+    </script>
     <iframe
-      style="padding-top: 250px"
+      style="padding-top: 240px"
       width="100%"
       scrolling="no"
       src="footer.html"
