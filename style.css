@@ -1,7 +1,7 @@
 .body {
-  background-image: url(images/fxgpJq.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: rgb(37, 37, 37);
+  margin: 0;
+  padding: 0;
 }
 .iletişim_konular {
   text-align: center;
@@ -17,21 +17,35 @@
   padding-top: 20px;
   border-color: transparent;
 }
-.Face {
-  stroke: black;
-  fill: yellow;
-}
+
 .İNÜ_tanıtımı {
   text-align: justify;
   font-size: 22px;
   color: white;
   font-family: "Times New Roman", Times, serif;
-  padding-top: 50px;
+  padding-top: 65px;
 }
-.link {
+a {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bolder;
   text-decoration: none;
-  font-size: 25px;
-  color: rgba(232, 235, 101, 0.993);
+  font-size: 18px;
+  color: rgba(241, 128, 35, 0.993);
+  padding-top: 10px;
+  transition: font-size 1s, color 2ms;
+  position: fixed;
+}
+
+a:hover {
+  font-size: 20px;
+  color: white;
+}
+
+.navBox {
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(49, 49, 49);
+  position: fixed;
 }
