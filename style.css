@@ -6,8 +6,8 @@
 .iletişim_konular {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  padding-top: 50px;
+  color: rgba(255, 255, 255, 0.863);
+  padding-top: 40px;
 }
 .Gönder_button {
   padding-left: 10px;
