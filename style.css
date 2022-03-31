@@ -4,13 +4,21 @@
   padding: 0;
 }
 .iletişim_konular {
+  font-weight: bold;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgba(255, 255, 255, 0.863);
+  color: rgba(255, 255, 255, 0.904);
   padding-top: 40px;
 }
 .Gönder_button {
   padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.904);
+  background-color: rgb(168, 56, 56);
+  cursor: pointer;
+  border: 0;
+  border-radius: 7px;
 }
 .HaftalıkDreslerTablosu {
   font-family: Arial, Helvetica, sans-serif;
