@@ -1,15 +1,18 @@
 <html>
   <head>
+    <title>push Pop</title>
     <script>
       const dizi = [];
       function Push() {
         var eleman = parseInt(document.getElementById("demo").value);
         dizi.push(eleman);
-        document.getElementById("demo2").innerHTML = dizi.join(" ");
+        document.getElementById("demo2").innerHTML =
+          "<span style =' font-size:20px'>" + dizi.join(" ") + "</span>";
       }
       function Pop() {
         dizi.pop();
-        document.getElementById("demo2").innerHTML = dizi.join(" ");
+        document.getElementById("demo2").innerHTML =
+          "<span style =' font-size:20px'>" + dizi.join(" ") + "</span>";
       }
       function TekrarEdenleriSil() {
         for (let i = 0; i < dizi.length; i++) {
@@ -20,12 +23,13 @@
             }
           }
         }
-        document.getElementById("demo2").innerHTML = dizi.join(" ");
+        document.getElementById("demo2").innerHTML =
+          "<span style =' font-size:20px'>" + dizi.join(" ") + "</span>";
       }
     </script>
   </head>
-  <body>
-    <label>sayi:</label>
+  <body style="background-color: aqua">
+    <label style="font-size: 20px">sayı:</label>
     <input id="demo" type="text" />
     <button onclick="Push()">Push</button>
     <button onclick="Pop()">Pop</button>

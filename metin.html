@@ -2,8 +2,8 @@
   <head>
     <title>metin</title>
   </head>
-  <body>
-    <p id="metin" style="font-size: larger">
+  <body style="background-color: brown">
+    <p id="metin" style="font-size: 25px; color: white">
       13 Eylül 2021 tarihinde başlayan 2021-2022 Eğitim ve Öğretim Yılı’nın
       üniversitemiz ve ülkemiz için hayırlı, başarılı ve sağlıklı geçmesini
       diliyorum. Üniversitemizi bu yıl kazanma başarısı gösteren yeni
@@ -27,13 +27,13 @@
       2021-2022 eğitim-öğretim yılının tüm öğrenci ve personelimiz için
       başarılı, sağlıklı ve verimli geçmesini dilerim.
     </p>
-    <label style="font-family: Arial, Helvetica, sans-serif"
+    <label style="font-family: Arial, Helvetica, sans-serif; color: white"
       >Metindeki kelimenin renğini değiştirmek için kelime giriniz:</label
     >
     <br />
     <input id="word" type="text" />
     <button onclick="değiştir() ">değiştir</button><br /><br />
-    <label style="font-family: Arial, Helvetica, sans-serif"
+    <label style="font-family: Arial, Helvetica, sans-serif; color: #ffffffff"
       >Metindeki sayilar toplami:</label
     ><br />
     <button onclick="metinSayilarToplam()">Topla</button>
@@ -44,7 +44,7 @@
         let word = document.getElementById("word").value;
         metin = metin.replaceAll(
           word,
-          "<span style='color:blue;'>" + word + "</span>"
+          "<span style='color:#4b4bfa;'>" + word + "</span>"
         );
         document.getElementById("metin").innerHTML = metin;
       }

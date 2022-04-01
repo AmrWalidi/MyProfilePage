@@ -7,9 +7,8 @@
         fill: yellow;
       }
     </style>
-    <script src="code.js"></script>
   </head>
-  <body>
+  <body style="background-color: rgb(91, 176, 179)">
     <svg width="1000" height="1000">
       <circle class="Face" cx="750" cy="290" r="200" />
       <circle cx="660" cy="230" r="30" />
@@ -21,5 +20,17 @@
     </svg>
     <p id="metin" style="color: rgb(89, 89, 231); font-size: 30px">İlk Metin</p>
     <button onclick="renkDeğiştirme()">degiştir</button>
+
+    <script>
+      function renkDeğiştirme() {
+        document.getElementById("metin").style = "color: red; font-size: 30px";
+      }
+      const Öğrenci = {
+        adı: "Amr",
+        No: 2210224064,
+        doğumTarih: "12.08.2002",
+      };
+      console.log(Öğrenci);
+    </script>
   </body>
 </html>
