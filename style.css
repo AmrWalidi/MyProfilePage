@@ -11,7 +11,12 @@
   padding-top: 100px;
 }
 
-.iletişim .button {
+.iletişim input {
+  width: 200px;
+  height: 30px;
+}
+
+.iletişim button {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
@@ -27,7 +32,16 @@
   border-color: transparent;
 }
 
-.İNÜ_tanıtımı {
+.İNÜ_tanıtımı img {
+  width: 25%;
+  height: 360px;
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.İNÜ_tanıtımı p {
   text-align: justify;
   font-size: 22px;
   color: white;
@@ -41,9 +55,9 @@
   font-weight: bolder;
   text-decoration: none;
   font-size: 18px;
-  color: rgba(241, 128, 35, 0.993);
+  color: rgb(250, 137, 45);
   padding-top: 10px;
-  transition: font-size 1s, color 2ms;
+  transition: font-size 1s, color 1ms;
   position: fixed;
 }
 
@@ -71,4 +85,109 @@
   border-radius: 20px;
   float: left;
   margin: 20px;
+}
+
+.Front_Page img {
+  width: 300px;
+  height: 380px;
+  margin-right: 120px;
+  margin-top: 30px;
+  float: right;
+  border-color: black;
+  border-style: inset;
+}
+
+.Front_Page button {
+  background-color: rgb(37, 37, 37);
+  color: rgba(255, 255, 255, 0.938);
+  border: 2px solid;
+  border-radius: 20px;
+  border-color: rgba(255, 136, 38, 0.993);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  position: absolute;
+  top: 550px;
+  left: 260px;
+  width: 130px;
+  height: 50px;
+  transition: background-color, border-color, 40ms;
+}
+
+.Front_Page button:hover {
+  background-color: rgba(241, 128, 35, 0.993);
+  border-color: white;
+}
+
+.Front_Page p {
+  font-size: 60px;
+  margin-left: 250px;
+  padding-top: 40px;
+  color: rgba(255, 255, 255, 0.952);
+}
+
+.PersonalInfo {
+  padding-top: 100px;
+  font-size: 20px;
+}
+
+.PersonalInfo label {
+  color: beige;
+}
+
+.PersonalInfo span {
+  color: white;
+  font-weight: bold;
+}
+
+.Hakkımda h1 {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: rgb(250, 158, 37);
+}
+
+.Hakkımda img {
+  margin-top: 50px;
+  float: right;
+  margin-right: 20px;
+  border-radius: 20px;
+  border: inset black;
+}
+
+.Hakkımda p {
+  margin-top: 80px;
+  padding-left: 20px;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.938);
+}
+
+.Hakkımda a {
+  text-decoration: none;
+  padding-left: 10px;
+  font-size: 35px;
+  color: beige;
+}
+
+.Hakkımda button {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  background-color: rgb(37, 37, 37);
+  color: rgba(231, 231, 231, 0.938);
+  border: 2px solid;
+  border-color: rgba(231, 231, 231, 0.938);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 110px;
+  height: 40px;
+  transition: background-color, border-color, 40ms;
+}
+
+.Hakkımda button:hover {
+  background-color: rgba(231, 231, 231, 0.938);
+  color: black;
+  border: 2px solid black;
 }

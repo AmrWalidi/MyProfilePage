@@ -1,11 +1,11 @@
   var i = 0;
-  var txt ="Web sayfama HOŞ GELDİNİZ! Benim adım Amr Nawaf Walıdı İnönü Üniversitesinde öğrenciyim. ";
+  var txt ="Web Sayfama HOŞ GELDİNİZ! Benim Adım AMR WALIDI Yazılım Mühendisliği Okuyorum. ";
   var speed = 60;
   window.onload = function typeWriter() {
     if (i < txt.length) {
-      if (i >= 37 && i <= 52) {
+      if (i >= 37 && i <= 46) {
         document.getElementById("demo").innerHTML +=
-          "<span style='color:  rgba(241, 128, 35, 0.993);font-family: cursive;'>" +
+          "<span style='color:  rgba(255, 130, 28, 0.993);font-family: Arial; font-weight:bold;'>" +
           txt.charAt(i) +
           "</span>";
         i++;
