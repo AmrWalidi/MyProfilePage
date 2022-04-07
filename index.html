@@ -6,20 +6,14 @@
   </head>
   <body class="body">
     <div id="navBox">
-      <a style="position: absolute; right: 330px" href="index.html">Anasayfa</a>
-
-      <a style="position: absolute; right: 240px" href="iletişim.html"
-        >İletişim</a
-      >
-      <a style="position: absolute; right: 120px" href="hakkimda.html"
-        >Hakkımda</a
-      >
-      <a style="position: absolute; right: 20px" href="projeler.html"
-        >Projeler</a
-      >
+      <a style="position: absolute; right: 330px" href="#anasayfa">Anasayfa</a>
+      <a style="position: absolute; right: 240px" href="#iletişim">İletişim</a>
+      <a style="position: absolute; right: 120px" href="#hakkimda">Hakkımda</a>
+      <a style="position: absolute; right: 20px" href="#projeler">Projeler</a>
     </div>
 
     <iframe
+      id="anasayfa"
       width="100%"
       scrolling="no"
       src="header.html"
@@ -29,8 +23,32 @@
     <div class="Front_Page">
       <img src="images/image.jpg" />
       <p id="demo"></p>
-      <a href="hakkimda.html"><button>HAKKIMDA</button></a>
     </div>
+
+    <iframe
+      id="hakkimda"
+      width="100%"
+      height="1800px"
+      scrolling="no"
+      src="hakkimda.html"
+      frameborder="0"
+    ></iframe>
+
+    <iframe
+      id="projeler"
+      width="100%"
+      scrolling="no"
+      src="projeler.html"
+      frameborder="0"
+    ></iframe>
+
+    <iframe
+      id="iletişim"
+      width="100%"
+      scrolling="no"
+      src="iletişim.html"
+      frameborder="0"
+    ></iframe>
 
     <iframe
       style="padding-top: 300px"

@@ -97,28 +97,6 @@
   border-style: inset;
 }
 
-.Front_Page button {
-  background-color: rgb(37, 37, 37);
-  color: rgba(255, 255, 255, 0.938);
-  border: 2px solid;
-  border-radius: 20px;
-  border-color: rgba(255, 136, 38, 0.993);
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  font-size: 15px;
-  position: absolute;
-  top: 550px;
-  left: 260px;
-  width: 130px;
-  height: 50px;
-  transition: background-color, border-color, 40ms;
-}
-
-.Front_Page button:hover {
-  background-color: rgba(241, 128, 35, 0.993);
-  border-color: white;
-}
-
 .Front_Page p {
   font-size: 60px;
   margin-left: 250px;
