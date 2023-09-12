@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#resim").slideToggle("slow");
+        });
+        $("#slideDown").click(function () {
+          $("#resim").slideDown("slow");
+        });
+        $("#slideUp").click(function () {
+          $("#resim").slideUp("slow");
+        });
+        $("#fadeIn").click(function () {
+          $("#resim").fadeIn("slow");
+        });
+        $("#fadeOut").click(function () {
+          $("#resim").fadeOut("slow");
+        });
+        $("#animate1").click(function () {
+          $("#resim").animate({
+            right: "250px",
+            width: "350px",
+          });
+        });
+        $("#animate2").click(function () {
+          $("#resim").animate({
+            bottom: "250px",
+            width: "200px",
+          });
+        });
+      });
+
+      function repeat() {
+        const element = document.getElementById("demo");
+        setInterval(function () {
+          element.innerHTML += "Hello ";
+        }, 1000);
+      }
+    </script>
+  </head>
+  <style>
+    #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #eedfcc;
+      border: solid 1px #c3c3c3;
+      width: 30%;
+    }
+    #resim {
+      margin: 0;
+      width: 30%;
+      padding: 5px;
+      text-align: center;
+      display: none;
+      position: absolute;
+    }
+    button {
+      margin-top: 350px;
+    }
+  </style>
+  <body>
+    <div id="flip">Slide down/up için bas</div>
+    <img
+      id="resim"
+      src="images/helianthus-yellow-flower-pixabay_11863.jpg"
+      alt="çiçek"
+    />
+    <button id="slideDown">Slide Down</button>
+    <button id="slideUp">Slide Up</button>
+    <button id="fadeIn">Fade IN</button>
+    <button id="fadeOut">Fade OUT</button>
+    <button id="animate1">küçült ve sağa kaydır</button>
+    <button id="animate2">küçült ve aşağı kaydır</button>
+    <p id="demo"></p>
+    <button onclick="repeat()">click</button>
+  </body>
+</html>

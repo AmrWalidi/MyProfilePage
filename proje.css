@@ -1,0 +1,80 @@
+.proje p{
+    font-size: 4.5vw;
+    position: relative;
+    margin-left: 30px;
+    text-align: center;
+    padding-top: 50px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+    text-shadow: 3px 5px rgb(186, 186, 186);
+    text-decoration: underline;
+    text-decoration-color: rgba(246, 136, 18, 0.822);
+  }
+  
+  .proje table  tr th{
+    font-size: 1.2vw;
+
+  } 
+
+  .proje table tr td{
+      color: black;
+      font-size: 1.1vw;
+  }
+
+  .proje table{
+      margin-top: 20px ;
+  }
+
+  .proje button{
+    padding: 0.3vw;
+    font-size: 1vw;
+    font-weight: bold;
+  }
+
+  .proje label{
+    font-size: 1.3vw;
+  }
+  .pushPop{
+    text-align: center; 
+    margin-top: 280px; 
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.968);
+    font-weight: bold;
+  }
+  
+  .pushPop input{
+     padding-top: 7px;
+     width: 200px;
+     font-size: 15px;
+  }
+  
+  .pushPop button{
+    font-size: 20px;
+  }
+  
+  
+  .hesapMakinesi {
+    text-align: center;
+    padding-top: 120px;
+  }
+  
+
+  .hesapMakinesi label {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  
+
+  .hesapMakinesi input, button {
+    font-size: 20px;
+  }
+  
+
+  .HMbaslik{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 40px;
+  
+  }

@@ -2,49 +2,59 @@
   <head>
     <title>metin</title>
   </head>
-  <body style="background-color: brown">
-    <p id="metin" style="font-size: 25px; color: white">
-      13 Eylül 2021 tarihinde başlayan 2021-2022 Eğitim ve Öğretim Yılı’nın
-      üniversitemiz ve ülkemiz için hayırlı, başarılı ve sağlıklı geçmesini
-      diliyorum. Üniversitemizi bu yıl kazanma başarısı gösteren yeni
-      öğrencilerimizi ve değerli ailelerini de kutluyorum. İnönü Üniversitesi
-      ailesine hoş geldiniz. 1975 yılında kurulan üniversitemiz, 40 bini aşkın
-      öğrencisi, 6200 akademik ve idari personeli ve 150 bini aşan mezunuyla 46
-      yıllık köklü bir eğitim kurumudur. Kurumsal yapımız, seçkin akademik ve
-      idari kadromuz ile önümüzdeki eğitim-öğretim döneminde de nitelikli insan
-      kaynağı yetiştirmeye, bilgi üretmeye, bilimsel araştırma yapmaya ve
-      topluma katkı sunmaya devam edeceğiz. Huzur ve güven şehri Malatya ile
-      bütünleşen üniversitemiz, her türlü bireysel ve akademik gelişiminizi
-      gerçekleştirebileceğiniz sağlam altyapıya, zengin sosyal ve kültürel
-      donanıma sahiptir. Kütüphanelerimiz, sosyal ve kültürel mekânlarımız,
-      güçlü internet altyapımız, öğrenci topluluklarımız, yürüyüş alanlarımız,
-      spor tesislerimiz ile her daim canlı ve zengin bir kampüs yaşamı sizleri
-      beklemektedir. Küresel salgın nedeniyle ara verdiğimiz yüz yüze eğitime
-      başlamanın büyük heyecanını yaşıyoruz. Salgınla mücadelenin en etkili yolu
-      aşı olup, maske, mesafe ve temizlik kurallarına uymaktır. Bunlar yüz yüze
-      eğitimin sürdürülebilmesi için vazgeçilmezdir. Bu konuda geleceğimiz olan
-      siz gençlerin güçlü bir destek vereceğinize olan inancımız tamdır.
-      2021-2022 eğitim-öğretim yılının tüm öğrenci ve personelimiz için
-      başarılı, sağlıklı ve verimli geçmesini dilerim.
-    </p>
-    <label style="font-family: Arial, Helvetica, sans-serif; color: white"
-      >Metindeki kelimenin renğini değiştirmek için kelime giriniz:</label
+  <body style="background-color: rgba(135, 13, 13, 0.877)">
+    <div
+      style="
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+      "
     >
-    <br />
-    <input id="word" type="text" />
-    <button onclick="değiştir() ">değiştir</button><br /><br />
-    <label style="font-family: Arial, Helvetica, sans-serif; color: #ffffffff"
-      >Metindeki sayilar toplami:</label
-    ><br />
-    <button onclick="metinSayilarToplam()">Topla</button>
-    <input id="toplam" type="number" />
+      <p id="metin" style="font-size: 1.7vw; color: white">
+        13 Eylül 2021 tarihinde başlayan 2021-2022 Eğitim ve Öğretim Yılı’nın
+        üniversitemiz ve ülkemiz için hayırlı, başarılı ve sağlıklı geçmesini
+        diliyorum. Üniversitemizi bu yıl kazanma başarısı gösteren yeni
+        öğrencilerimizi ve değerli ailelerini de kutluyorum. İnönü Üniversitesi
+        ailesine hoş geldiniz. 1975 yılında kurulan üniversitemiz, 40 bini aşkın
+        öğrencisi, 6200 akademik ve idari personeli ve 150 bini aşan mezunuyla
+        46 yıllık köklü bir eğitim kurumudur. Kurumsal yapımız, seçkin akademik
+        ve idari kadromuz ile önümüzdeki eğitim-öğretim döneminde de nitelikli
+        insan kaynağı yetiştirmeye, bilgi üretmeye, bilimsel araştırma yapmaya
+        ve topluma katkı sunmaya devam edeceğiz. Huzur ve güven şehri Malatya
+        ile bütünleşen üniversitemiz, her türlü bireysel ve akademik
+        gelişiminizi gerçekleştirebileceğiniz sağlam altyapıya, zengin sosyal ve
+        kültürel donanıma sahiptir. Kütüphanelerimiz, sosyal ve kültürel
+        mekânlarımız, güçlü internet altyapımız, öğrenci topluluklarımız,
+        yürüyüş alanlarımız, spor tesislerimiz ile her daim canlı ve zengin bir
+        kampüs yaşamı sizleri beklemektedir. Küresel salgın nedeniyle ara
+        verdiğimiz yüz yüze eğitime başlamanın büyük heyecanını yaşıyoruz.
+        Salgınla mücadelenin en etkili yolu aşı olup, maske, mesafe ve temizlik
+        kurallarına uymaktır. Bunlar yüz yüze eğitimin sürdürülebilmesi için
+        vazgeçilmezdir. Bu konuda geleceğimiz olan siz gençlerin güçlü bir
+        destek vereceğinize olan inancımız tamdır. 2021-2022 eğitim-öğretim
+        yılının tüm öğrenci ve personelimiz için başarılı, sağlıklı ve verimli
+        geçmesini dilerim.
+      </p>
+      <label style="font-family: Arial; color: white; font-size: 1.7vw"
+        >Metindeki kelimenin renğini değiştirmek için kelime giriniz:</label
+      >
+      <br />
+      <input id="word" type="text" />
+      <button onclick="değiştir() ">değiştir</button><br /><br />
+      <label style="font-family: Arial; color: white; font-size: 1.7vw"
+        >Metindeki sayilar toplami:</label
+      ><br />
+      <input id="toplam" type="number" />
+      <button onclick="metinSayilarToplam()">Topla</button>
+    </div>
     <script>
       function değiştir() {
         let metin = document.getElementById("metin").innerHTML;
         let word = document.getElementById("word").value;
         metin = metin.replaceAll(
           word,
-          "<span style='color:#4b4bfa;'>" + word + "</span>"
+          "<span style='color:#7f76ff;'>" + word + "</span>"
         );
         document.getElementById("metin").innerHTML = metin;
       }

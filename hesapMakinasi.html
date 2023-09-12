@@ -2,26 +2,21 @@
   <head>
     <title>hesap makinesi</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="proje.css" />
   </head>
-  <body class="body">
-    <h1
-      style="
-        color: white;
-        font-weight: bold;
-        padding-top: 20px;
-        margin-left: 20px;
-      "
-    >
-      <u>HESAP MAKİNASI</u>
-    </h1>
-    <input id="num1" />
-    <button onclick="add()">+</button>
-    <button onclick="minus()">-</button>
-    <button onclick="multiply()">*</button>
-    <button onclick="divide()">/</button>
-    <button onclick="percent()">%</button>
-    <input id="num2" /><br /><br /><label style="color: white">Sonuç:</label>
-    <input id="sonuc" />
+  <body class="body" style="background-color: rgb(43, 43, 43)">
+    <h1 class="HMbaslik">HESAP MAKİNESİ</h1>
+    <div class="hesapMakinesi">
+      <br /><br />
+      <input id="num1" />
+      <button onclick="add()">+</button>
+      <button onclick="minus()">-</button>
+      <button onclick="multiply()">*</button>
+      <button onclick="divide()">/</button>
+      <button onclick="percent()">%</button>
+      <input id="num2" /><br /><br /><label style="color: white">Sonuç:</label>
+      <input id="sonuc" />
+    </div>
 
     <script>
       function add() {

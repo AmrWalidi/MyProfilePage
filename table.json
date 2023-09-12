@@ -1,0 +1,30 @@
+[
+{ "no": 1,
+ "adi": "Hesap Makinesi", 
+ "trh": "03/03/2022", 
+ "ack": "Javascript üzerinden basit bir hesap makinesi.",
+ "link": "hesapMakinasi.html"
+},
+
+{ "no": 2,
+ "adi": "Gülen Surat", 
+ "trh": "10/03/2022", 
+ "ack": "Javascript üzerinden SVG kullanarak bir gülen surat." ,
+ "link": "smilyFace.html"
+},
+
+{ "no": 3,
+ "adi": "Metinde Bulma", 
+ "trh": "17/03/2022", 
+ "ack": "Javascript üzerinden metin içerisinde kullanıcıdan istediği kelime bulup renk değiştirir ve metin içerisindaki sayılar toplar.",
+ "link": "metin.html"
+},
+
+{ "no": 4, 
+  "adi": "Push Pop işlemleri", 
+  "trh": "24/03/2022", 
+  "ack": "Javascript üzerinden push pop işlemleri kullanarak dizi oluşturma.",
+  "link": "push_pop.html"
+ }
+
+]

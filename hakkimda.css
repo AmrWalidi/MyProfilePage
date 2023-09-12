@@ -1,0 +1,111 @@
+.Hakkımda{
+    background-color: rgba(245, 245, 245, 0.4) ;
+    border-color: rgb(250, 137, 45);
+  }
+  
+   
+  .Hakkımda h1 {
+    text-align: center;
+    padding-top: 2vw;
+    font-size: 4vw;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+    text-shadow: 3px 5px rgb(186, 186, 186);
+    text-decoration: underline;
+    text-decoration-color: rgba(246, 136, 18, 0.822);
+  }
+
+  .Hakkımda h2{
+    text-align: center;
+    padding-top: 2vw;
+    font-size: 3vw;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+    text-shadow: 3px 5px rgb(186, 186, 186);
+   
+  }
+  
+  .Hakkımda img {
+    margin-top: 90px;
+    float: right;
+    border-radius: 20px;
+    border: inset black;
+  }
+
+  
+  .Hakkımda p {
+    text-align: justify;
+    margin-top: 80px;
+    padding-left: 20px;
+    font-size: 2vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(28, 28, 28, 0.938);
+  }
+
+  
+  .Hakkımda a {
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 2vw;
+    color: rgba(103, 101, 101, 0.66);
+  }
+
+  
+  .Hakkımda button {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(37, 37, 37);
+    color: rgba(231, 231, 231, 0.938);
+    border: 2px solid;
+    border-color: rgba(231, 231, 231, 0.938);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.2vw;
+    padding: 1vw ;
+    transition: background-color, border-color, 40ms;
+  }
+
+
+  
+  .Hakkımda button:hover {
+    background-color: rgba(231, 231, 231, 0.938);
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+
+
+
+  table thead th{
+    font-size: 1vw;
+  }
+
+
+  table tbody tr th{
+    font-size: 1vw;
+  }
+
+
+  
+  .İNÜ_tanıtımı img {
+    width: 25%;
+    height: 360px;
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 80px;
+  }
+
+  
+  
+  .İNÜ_tanıtımı p {
+    text-align: justify;
+    font-size: 1.6vw;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    padding-top: 65px;
+    padding-left: 20px;
+    width: 70%;
+  }

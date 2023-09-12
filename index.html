@@ -1,61 +1,379 @@
-<html>
+<html id="html" lang="tr">
   <head>
-    <title>My Profile Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="anasayfa.css" />
+    <link rel="stylesheet" href="hakkimda.css" />
+    <link rel="stylesheet" href="proje.css" />
+    <link rel="stylesheet" href="iletisim.css" />
+    <link rel="stylesheet" href="footer.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://html2canvas.hertzen.com/dist/html2canvas.js"
+    ></script>
     <script src="code.js"></script>
+    <script src="pdf.js"></script>
+    <script>
+      
+
+  $(document).ready(function() {
+    // Activate Carousel
+    $("#myCarousel").carousel({ interval: 7000 });
+  
+    // Enable Carousel Controls
+    $(".left").click(function () {
+      $("#myCarousel").carousel("prev");
+    });
+    $(".right").click(function () {
+      $("#myCarousel").carousel("next");
+    });
+  });
+
+  $(document).ready(function(){
+    let $table =$("#table > tbody");
+    $.getJSON("table.json", function(data){
+        $.each(data, function(index,value){
+            var row= `<tr>
+            <td>${value.no}</td>
+            <td>${value.adi}</td>
+            <td>${value.trh}</td>
+            <td>${value.ack}</td>
+            <td>
+            <a href=${value.link} target="_top"><button style="background-color:rgb(250, 137, 45); color:rgb(43, 42, 42); border-radius:4px; border: white" >BAS</button></a>
+          </td>
+          </tr>
+            `
+            $table.append(row);
+        });
+    });
+});
+    </script>
   </head>
   <body class="body">
-    <div id="navBox">
-      <a style="position: absolute; right: 330px" href="#anasayfa">Anasayfa</a>
-      <a style="position: absolute; right: 240px" href="#iletişim">İletişim</a>
-      <a style="position: absolute; right: 120px" href="#hakkimda">Hakkımda</a>
-      <a style="position: absolute; right: 20px" href="#projeler">Projeler</a>
+    <nav>
+      <ul>
+        <li><a  href="#anasayfa">Anasayfa</a></li>
+        <li><a  href="#hakkimda">Hakkımda</a></li>
+        <li><a  href="#projeler">JS Projeler</a></li>
+        <li><a  href="#iletişim">İletişim</a></li>
+      </ul>
+    </nav>
+    <ul style="list-style-type: none; padding: 0; margin: 0">
+      <li  id="anasayfa">
+        <div class="Front_Page ">
+          <div class="container">
+            <div id="myCarousel" class="carousel slide">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item">
+                  <img
+                    class="img-responsive"
+                    style="max-width: 100%; height: auto"
+                    src="images/yazilim-muhendisiligi.jpg"
+                    width="400px"
+                    height="200px"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    style="max-width: 100%; height: auto"
+                    class="img-responsive"
+                    src="images/Inönü_üniversitesi.jpg"
+                    width="460px"
+                    height="200px"
+                  />
+                </div>
+                <div class="item active">
+                  <video autoplay="autoplay" loop muted>
+                    <source
+                    class="merhaba"
+                      width="400px"
+                      height="300px"
+                      src="videos/2022-06-10_13-42-43_Trim_AdobeExpress.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </div>
+              </div>
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="hakkimda">
+        <div class="container Hakkımda">
+          <h1>HAKKIMDA</h1>
+    
+          <p>
+            - Yazılım mühendisliği okuyan Yemenli bir öğrenciyim. Türkiye'ye 3 yıl
+            önce ailemle gelip Eğitimimi tamamlamak için. HTML, CSS ve Javascript'te
+            biraz bilgim var ama Web sayfa oluşturma dünya'ya yeni değilim çünkü 4
+            yıl önce weebly kullanarak bir web sitesini yaptım. HTML ve weebly aynı
+            değil HTML kod yazarak web sayfalar oluşturulur ama weebly hazır bir
+            elemenler ve nesneler kullanarak oluşturulur. Web sitemi görmek
+            isterseniz aşağıdaki linki ziyaret edebilirsiniz:
+            <br /><br />
+            <a href="https://amr9juniorscientist.weebly.com/" target="_blank"
+              ><u> amr9juniorscientist</u></a
+            >
+            <br /><br /><br><br>
+            - İnönü Üniversitesi 1. Sınıfta yazılım mühendisliği okuyorum. İnönü
+            üniversitesi Türkiye'nin en büyük ve en iyi üniversiteleriden biri ve
+            Malatya'nin en büyük üniversitedir. İnönü üniversite'nin hakkında daha
+            fazla bilgi almak isterseniz aşağıdaki buttonu taklayınız:
+          </p>
+    
+          <a href="İNÜ_Tanıtım.html" target="_top"><button>Taklayınız</button></a>
+          <p>
+            - Dediğim gibi yazılım mühendisliği okuyorum ve bu bölüm ilgili çok
+            derslerim var ve bazı günlerde sabahtan akşama kadar üniversitede
+            kalırım, aşağıdaki tablo üniversitedeki haftalık dreslerim tablosuna
+            bakabilirsiniz:
+          </p><br>
+          <table width: 200px class="table table-resposive table-striped" border="2">
+    
+            <thead >
+              <th></th>
+              <th>Pazartesi</th>
+              <th>Salı</th>
+              <th>Çarşamba</th>
+              <th>Perşembe</th>
+              <th>Cuma</th>
+            </thead>
+        
+            <tbody>
+              <tr>
+                <th >9:10-9:55</th>
+                <th></th>
+                <th>Programlama Giriş ||</th>
+                <th>Web Programlama</th>
+                <th>Programlama Giriş ||</th>
+                <th>Matematik ||</th>
+              </tr>
+              <tr>
+                <th>10:05-10:50</th>
+                <th>Matematik ||</th>
+                <th>Programlama Giriş ||</th>
+                <th>Web Programlama</th>
+                <th>Programlama Giriş ||</th>
+                <th>Matematik ||</th>
+              </tr>
+              <tr>
+                <th>11:00-11:45</th>
+                <th>Matematik ||</th>
+                <th>Programlama Giriş ||</th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <th>13:30-14:15</th>
+                <th>Ayrık Yapılar</th>
+                <th></th>
+                <th>Yabancı Dil ||</th>
+                <th>Web Programlama</th>
+                <th>Türk Dili ||</th>
+              </tr>
+              <th>14:25-15:10</th>
+                <th>Ayrık Yapılar</th>
+                <th></th>
+                <th>Yabancı Dil ||</th>
+                <th>Web Programlama</th>
+                <th>Türk Dili ||</th>
+              </tr>
+              <th>15:20-16:05</th>
+                <th>Ayrık Yapılar</th>
+                <th>Atatürk İlkleri ve İnklap Tarihi ||</th>
+                <th>Yabancı Dil ||</th>
+                <th>Lineer Cebir</th>
+                <th></th>
+              </tr>
+              <th>16:15-17:00</th>
+                <th></th>
+                <th>Atatürk İlkleri ve İnklap Tarihi ||</th>
+                <th></th>
+                <th>Lineer Cebir</th>
+                <th></th>
+              </tr>
+            </tbody>
+          </table>
+          <h2> Becerilerim</h2>
+          <label >C</label>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+              <span>90%</span>
+            </div>
+          </div>
+          <label >HTML</label>
+          <div class="progress">
+            <div class="progress-bar  progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+              <span>80%</span>
+            </div>
+          </div>
+          <label >CSS</label>
+          <div class="progress">
+            <div class="progress-bar  progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+              <span>90%</span>
+            </div>
+          </div>
+          <label >Javascript</label>
+          <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+              <span>70%</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li id="projeler">
+        <div class="proje">
+          <p>Projeler</p>
+           <div class="container">
+            <table class="table table-resposive" id="table">
+              <thead>
+                 <tr>
+                   <th>No</th>
+                   <th>Proje Adı</th>
+                   <th>Yaptığı Tarihi</th>
+                   <th>Açıklama</th>
+                   <th>link</th>
+                 </tr>
+              </thead>
+              <tbody></tbody>
+             </table>
+        <ul>
+          <li>
+            <label >Proje tablosunu yazdırmak için butonu bas</label>
+            <button class="btn" onclick="genPDF()">YAZDIR</button>
+          </li>
+        </ul>
+      </div>
     </div>
-
-    <iframe
-      id="anasayfa"
-      width="100%"
-      scrolling="no"
-      src="header.html"
-      frameborder="0"
-    ></iframe>
-
-    <div class="Front_Page">
-      <img src="images/image.jpg" />
-      <p id="demo"></p>
-    </div>
-
-    <iframe
-      id="hakkimda"
-      width="100%"
-      height="1800px"
-      scrolling="no"
-      src="hakkimda.html"
-      frameborder="0"
-    ></iframe>
-
-    <iframe
-      id="projeler"
-      width="100%"
-      scrolling="no"
-      src="projeler.html"
-      frameborder="0"
-    ></iframe>
-
-    <iframe
-      id="iletişim"
-      width="100%"
-      scrolling="no"
-      src="iletişim.html"
-      frameborder="0"
-    ></iframe>
-
-    <iframe
-      style="padding-top: 300px"
-      width="100%"
-      scrolling="no"
-      src="footer.html"
-      frameborder="0"
-    ></iframe>
+      </li>
+      <li id="iletişim" height="1000px">
+        <img style="float:right ; width: 20vw;">
+        <div class="contact">
+          <span>İletişim</span><br /><br />
+          <p>Benimle İletişime Geçiniz:</p>
+          <form>
+            <div class="row">
+              <div class="col-75">
+                <input type="text" placeholder="Ad" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-75">
+                <input type="text" placeholder="Telefon No." />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-75">
+                <input type="text" placeholder="E-posta" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-75">
+                <textarea
+                  placeholder="Açıklayınız"
+                  style="height: 200px"
+                ></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" onclick="massage()" value="Gönder" />
+            </div>
+          </form>
+        </div>
+        <div class="container personelInfo" style="padding: 0; margin: 0">
+          <ul>
+            <p>
+              <span class="glyphicon glyphicon-user"></span>
+              <label> Name:</label>
+             <div>Amr Walidi</div> 
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <span class="glyphicon glyphicon-envelope"></span>
+              <label> E-posta:</label>
+              <div>amr.nawaf128@gmail.com</div>
+              
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <span class="glyphicon glyphicon-phone"></span>
+              <label> Tel no:</label>
+             <div>+905369922950</div> 
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <span class="glyphicon glyphicon-map-marker"></span
+              ><label> Adres:</label>
+               <div>Cirikpınar, Özel Ensar Vakfı Malatya YüksekÖğrenim <br />
+                    Erkek Öğrenci Yurdu, Altunkaynak.
+                  </div>   
+            </p>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <ul class="footer">
+          <li>
+            <a
+              href="https://www.facebook.com/amr.walidi/"
+              target="_blank"
+              class="fa fa-facebook"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/AmrNawaf1"
+              target="_blank"
+              class="fa fa-twitter"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/amr.nw_02/"
+              target="_blank"
+              class="fa fa-instagram"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://web.whatsapp.com/"
+              target="_blank"
+              class="fa fa-whatsapp"
+            ></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </body>
 </html>
